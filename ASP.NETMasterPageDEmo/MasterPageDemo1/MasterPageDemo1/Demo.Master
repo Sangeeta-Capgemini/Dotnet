@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Demo.master.cs" Inherits="MasterPageDemo1.Demo" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 42%;
+            height: 182px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table align="center" cellpadding="4" cellspacing="4" class="auto-style1">
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblwelcome" runat="server" ForeColor="#006666" Text="Welcome to Master Page"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" ForeColor="#660066" Text="Copyright to Capgemini"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

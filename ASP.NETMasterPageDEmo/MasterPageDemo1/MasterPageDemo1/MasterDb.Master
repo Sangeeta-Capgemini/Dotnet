@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterDb.master.cs" Inherits="MasterPageDemo1.MasterDb" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 68%;
+            height: 207px;
+            border: 4px solid #000000;
+        }
+        .auto-style2 {
+            width: 26px;
+            height: 82px;
+        }
+        .auto-style3 {
+            height: 82px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+            <table align="center" cellpadding="4" cellspacing="4" class="auto-style1">
+                <tr>
+                    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lblmaster" runat="server" ForeColor="Red" Text="Welcome to Database Master Page"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:LinkButton ID="lnkagent" runat="server" ForeColor="#CC0099" OnClick="lnkagent_Click">Agent</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lnkpolicy" runat="server" ForeColor="#CC3399" OnClick="lnkpolicy_Click" >Policy</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="lnkEmp" runat="server" ForeColor="#CC3399" OnClick="lnkEmp_Click">Emp</asp:LinkButton>
+                        <br />
+                    </td>
+                    <td class="auto-style3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="Label2" runat="server" ForeColor="#00CCFF" Text="Copyright to Capgemini"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>
